@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Stoic.create(name: 'Marcus Aurelius')
+
+Quote.create(phrase: 'You have power over your mind — not outside events. Realize this, and you will find strength.' stoic_id: 1)
