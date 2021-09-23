@@ -36,6 +36,7 @@ class QuotesController < ApplicationController
   # DELETE /quotes/1
   def destroy
     @quote.destroy
+    render json: {message: 'Quote succesfully deleted'}
   end
 
   private

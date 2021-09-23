@@ -36,6 +36,7 @@ class StoicsController < ApplicationController
   # DELETE /stoics/1
   def destroy
     @stoic.destroy
+    render json: {message: 'Stoic successful deleted'}
   end
 
   private
