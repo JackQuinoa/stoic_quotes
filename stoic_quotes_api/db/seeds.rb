@@ -8,4 +8,7 @@
 
 Stoic.create(name: 'Marcus Aurelius')
 
-Quote.create(phrase: 'You have power over your mind — not outside events. Realize this, and you will find strength.' stoic_id: 1)
+Quote.create([
+    {phrase: 'You have power over your mind — not outside events. Realize this, and you will find strength.', stoic_id: 1},
+    {phrase: 'If it is not right, do not do it; if it is not true, do not say it.', stoic_id: 1}
+])
