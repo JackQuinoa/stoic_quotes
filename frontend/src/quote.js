@@ -3,7 +3,7 @@ class Quote {
     static all = []
     static quoteContainer = document.getElementById("quotes-container")
 
-    constructor(id, phrase, stoic_id){
+    constructor({id, phrase, stoic_id}){
         this.id = id
         this.phrase = phrase
         this.stoic_id = stoic_id
@@ -25,4 +25,7 @@ class Quote {
         return this.element
     }
 
+    slapOnDom(){
+        Quote.quoteContainer.appendChild(quoteHTML())
+    }
 }
