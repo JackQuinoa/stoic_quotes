@@ -8,6 +8,10 @@ class QuoteService{
 
     getQuotes(){
         fetch(`${this.endpoint}/quotes`)
+        .then(resp => resp.json())
+        .then(contacts => {
+            
+        })
 
     }
 
