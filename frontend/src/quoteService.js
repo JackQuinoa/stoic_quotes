@@ -12,6 +12,7 @@ class QuoteService{
         .then(quotes => {
             for (const quote of quotes){
                 const q = new Quote(quote)
+                q.slapOnDom()
             }
         })
 
