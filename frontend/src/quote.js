@@ -1,7 +1,8 @@
 class Quote {
 
     static all = []
-    static quoteContainer = document.getElementById("quotes-container")
+    static quotesContainer = document.getElementById("quotes-container")
+    static quoteForm = document.getElementById('form-container')
 
     constructor({id, phrase, stoic_id}){
         this.id = id
@@ -26,6 +27,6 @@ class Quote {
     }
 
     slapOnDom(){
-        Quote.quoteContainer.appendChild(quoteHTML())
+        Quote.quotesContainer.append(this.quoteHTML())
     }
 }
