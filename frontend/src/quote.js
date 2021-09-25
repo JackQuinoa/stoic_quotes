@@ -12,7 +12,7 @@ class Quote {
         this.element = document.createElement('li')
         this.element.dataset.id = this.id 
         this.element.id = `quote-${this.id}`
-
+        this.element.addEventListener('click', this.handleClick)
         Quote.all.push(this)
     }
 
@@ -39,5 +39,11 @@ class Quote {
                 <input type="submit" id="create">
             <form>
         `
+    }
+
+    handleClick = () => {
+        if (event.target.innerText === 'Delete'){
+           quoteService.deleteQuote(this.id)
+        }
     }
 }

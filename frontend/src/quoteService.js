@@ -40,5 +40,15 @@ class QuoteService{
        })
     }
 
+    deleteQuote(id){
+        fetch(`${this.endpoint}/quotes/${id}`, {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(resp => resp.json())
+        .then(json => alert(json.message))
+    }
 
 }
