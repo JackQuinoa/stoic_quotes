@@ -44,6 +44,7 @@ class Quote {
     handleClick = () => {
         if (event.target.innerText === 'Delete'){
            quoteService.deleteQuote(this.id)
+           Quote.quotesContainer.removeChild(this.quoteHTML())
         }
     }
 }
