@@ -18,6 +18,27 @@ class QuoteService{
 
     }
 
+    createQuote(){
+        const quote = {
+            phrase: document.getElementById('phrase').value,
+            stoic_id: 1
+        }   
+
+        const configObj = {
+            method: 'POST',
+            headers: {
+                'Content-type': 'application/json'
+            },
+            body: JSON.stringify(quote)
+        }
+
+       fetch(`${this.endpoint}/quotes`, configObj)
+       .then(resp => resp.json())
+       .then(quote => {
+           const q = new Quote(quote)
+           q.slapOnDom()
+       })
+    }
 
 
 }

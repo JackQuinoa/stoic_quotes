@@ -21,6 +21,8 @@ class Quote {
             <div>
                 <h4>${this.phrase}</h4>
             </div>
+            <button id='delete-bttn'>Delete</button>
+            <br>
 
         `
         return this.element
@@ -35,9 +37,7 @@ class Quote {
             <form id="new-quote-form">
                 Phrase: <input type="text" id="phrase">
                 <input type="submit" id="create">
-            
             <form>
-
         `
     }
 }
