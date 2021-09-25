@@ -29,4 +29,15 @@ class Quote {
     slapOnDom(){
         Quote.quotesContainer.append(this.quoteHTML())
     }
+
+    static renderForm(){
+        Quote.quoteForm.innerHTML += `
+            <form id="new-quote-form">
+                Phrase: <input type="text" id="phrase">
+                <input type="submit" id="create">
+            
+            <form>
+
+        `
+    }
 }
