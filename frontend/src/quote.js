@@ -20,6 +20,7 @@ class Quote {
         this.element.innerHTML += `
             <div>
                 <h4>${this.phrase}</h4>
+                <h4>${this.stoic_id}</h4>
             </div>
             <button id='delete-bttn'>Delete</button>
             <br>
@@ -36,6 +37,7 @@ class Quote {
         Quote.quoteForm.innerHTML += `
             <form id="new-quote-form">
                 Phrase: <input type="text" id="phrase">
+                Stoic: <input type="text" id="stoic_id">
                 <input type="submit" id="create">
             <form>
         `

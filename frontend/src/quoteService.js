@@ -21,7 +21,8 @@ class QuoteService{
     createQuote(){
         const quote = {
             phrase: document.getElementById('phrase').value,
-            stoic_id: 1
+            stoic_id: document.getElementById('stoic_id').value
+            // i think we need to do getElementByID('stoic').value^
         }   
 
         const configObj = {
