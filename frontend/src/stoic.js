@@ -22,8 +22,7 @@ class Stoic {
             </div>
             <button id='delete-bttn'>Delete</button>
             <br>
-
-        `
+            `
         return this.element
     }
 
